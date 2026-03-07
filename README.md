@@ -19,3 +19,5 @@ AND
 yum install iptables-services -y && systemctl start iptables && systemctl enable iptables
 
 --------------------------------------------
+
+For call need sip phone OR For Windows recommend microsip OR for linux recommend zoiper. 
