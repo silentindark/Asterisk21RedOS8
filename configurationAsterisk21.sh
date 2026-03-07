@@ -3,8 +3,7 @@ cd ~
 sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
 setenforce 0
 dnf install nano wget yum sox -y
-curl -sL https://rpm.nodesource.com/setup_18.x | bash -
-dnf install gcc-c++ make nodejs -y
+dnf install gcc-c++ make -y
 wget https://downloads.asterisk.org/pub/telephony/asterisk/releases/asterisk-21.9.1.tar.gz
 tar zxvf asterisk-*.tar.gz
 cd asterisk-21.9.1/
