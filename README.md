@@ -18,6 +18,9 @@ If you have error "core" use command: fwconsole ma install core && fwconsole ma 
 
 --------------------------------------------
 
+If then you have problem in script configurationFreePBX17.sh with install mariadb use separately command "dnf install mariadb mariadb-server --allowerasing"  and after start script configurationFreePBX17.sh
+
+--------------------------------------------
 If need switch from firewald to iptables user commands: 
 
 systemctl stop firewalld && systemctl disable firewalld && yum remove firewalld -y
