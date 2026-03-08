@@ -37,4 +37,32 @@ For correct work calls, you need in web interfaces open "Settings" -> "Asterisk 
 
 --------------------------------------------
 
+Connect 2 and more server Asterisk (settings over FreePBX)
+
+Add IAX2 Trunk on both server (CONNECTIVITY->TRUNKS)
+
+Any name trunks
+
+Outgouing and Incoming
+
+type=friend
+
+host= IP_ADDRESS_OTHER SERVER
+
+qualify=yes
+
+insecure=invite,port
+
+nat=yes
+
+context=from-internal
+
+OUTBOUND ROUTES IN CONNECTIVITY
+
+Any name trunks
+
+'Trunk Sequence for Matched Routes' select created IAX2 TRUNK
+
+--------------------------------------------
+
 For call need sip phone OR For Windows recommend microsip OR for linux recommend zoiper. 
